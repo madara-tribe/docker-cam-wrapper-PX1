@@ -1,5 +1,5 @@
 sudo apt install udev
-udevadm info --name=/dev/video0 --attribute-walk
+udevadm info --name=/dev/video4 --attribute-walk
 #   # SUBSYSTEMS=="video4linux"
     # ATTRS{idProduct}=="b805"
     # ATTRS{idVendor}=="04f2"
