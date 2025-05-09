@@ -10,9 +10,9 @@ fi
 docker run -it --rm \
   --net=host \
   --privileged \
-  --device=/dev/video4 \
+  --device=$ARDUINO_DEV \
   --group-add video \
-  -v /home/hagi/Downloads/ggg/workspace/:/ros2_ws \
-  test:latest
+  -v <mount_path>:/ros2_ws \
+  <image name>:latest
 
 # v4l2-ctl --list-devices
