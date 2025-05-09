@@ -4,8 +4,10 @@ This repository is launch camera by ros2 node.
 You can have own customized way of using camera for example publish image, plot or save image.
 
 # Architecture
-
-
+- Outside USB Camera
+    - outside camera which is USB or similar one. you can control outside camera from inside of Dodcker  
+- ros2 in Docker
+    - you can build specific environment in any device you like. It can be applied to robotic project.
 
 
 
