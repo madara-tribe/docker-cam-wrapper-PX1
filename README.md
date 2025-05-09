@@ -9,7 +9,7 @@ You can have own customized way of using camera for example publish image, plot 
 
 
 
-## How to use
+# How to use
 ### Setup
 1. setup udev to recognize camera path
 ```
