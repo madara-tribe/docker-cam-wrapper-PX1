@@ -10,6 +10,7 @@ You can have own customized way of using camera for example publish image, plot 
 
 
 ## How to use
+```
 1. setup udev to recognize camera path
 $ udevadm info --name=/dev/video0 --attribute-walk
 $ sudo cp config/99-realsense-libusb.rules /etc/udev/rules.d/
@@ -17,8 +18,9 @@ $ sudo cp config/99-realsense-libusb.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules && sudo udevadm trigger
 
 2. enter inside Docker by connecting with outside camera
+# setup ros pakages using this codes after enter the docker
 $ cd Docker and ./run.sh
-setup ros pakages using this codes
+```
 
 ## To launch camera 
 run this command with camera path speified.
