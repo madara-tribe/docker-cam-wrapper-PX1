@@ -1,0 +1,1 @@
+SUBSYSTEM=="video4linux", ATTRS{idVendor}=="04f2", ATTRS{idProduct}=="b805", MODE="0660", GROUP="video", OWNER="hagi"
