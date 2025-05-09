@@ -4,7 +4,7 @@ udevadm info --name=/dev/video4 --attribute-walk
     # ATTRS{idProduct}=="b805"
     # ATTRS{idVendor}=="04f2"
     
-#SUBSYSTEM=="video4linux" – matches video devices like /dev/video0.
+#SUBSYSTEM=="video4linux" – matches video devices like /dev/video4.
 #ATTR{name} – matches the device's descriptive name (Integrated Camera: Integrated C).
 #ATTRS{idVendor}=="04f2" and ATTRS{idProduct}=="b805" – ensures you're targeting your specific USB camera.
 #MODE="0666" – sets read/write permissions for all users.
@@ -12,10 +12,10 @@ udevadm info --name=/dev/video4 --attribute-walk
 
 whoami
 # hagi
-# OWNER="hagi"
+# OWNER="h***"
 
 sudo cp config/99-realsense-libusb.rules /etc/udev/rules.d/
-# ls -l /dev/video0 has to show "crw-rw----+ 1 hagi video ~ /dev/video0"
+# ls -l /dev/video0 has to show "crw-rw----+ 1 ~ video ~ /dev/video0"
 sudo udevadm control --reload-rules && sudo udevadm trigger
 
 
