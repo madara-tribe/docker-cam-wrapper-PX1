@@ -4,6 +4,8 @@ This repository is launch camera by ros2 node.
 You can have own customized way of using camera for example publish image, plot or save image.
 
 # Architecture
+<img src="https://github.com/user-attachments/assets/9551e80f-1954-450c-b4e4-85c93b0d9677" width="600px">
+
 - Udev
     - to let device recognize camera  
 - Outside USB Camera
